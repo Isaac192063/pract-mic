@@ -6,7 +6,7 @@ import org.workshop.proyecto1.modelos.Carro;
 
 import java.util.List;
 
-@FeignClient(name = "carro-service", url = "http://localhost:8082")
+@FeignClient(name = "carro-service", url = "http://localhost:8002")
 public interface CarroFeignClient {
     @PostMapping("/carro")
     Carro save(@RequestBody Carro carro);

@@ -9,7 +9,7 @@ import org.workshop.proyecto1.modelos.Moto;
 
 import java.util.List;
 
-@FeignClient(name = "moto-service", url = "http://localhost:8083")
+@FeignClient(name = "moto-service", url = "http://localhost:8003")
 public interface MotoFeignClient {
     @PostMapping("/moto")
     Moto saveMoto(@RequestBody Moto moto);

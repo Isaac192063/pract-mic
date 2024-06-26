@@ -45,11 +45,11 @@ public class UsuarioService {
     }
 
     public List<Carro> getCarros(int usuarioId){
-        return restTemplate.getForObject("http://localhost:8082/carro/usuario/"+usuarioId, List.class);
+        return restTemplate.getForObject("http://localhost:8002/carro/usuario/"+usuarioId, List.class);
     }
 
     public List<Moto> getMotos(int usuarioId){
-        return restTemplate.getForObject("http://localhost:8083/moto/usuario/"+usuarioId, List.class);
+        return restTemplate.getForObject("http://localhost:8003/moto/usuario/"+usuarioId, List.class);
     }
     // feign client
     public Carro saveCarro(Carro carro, int idUsuario){
